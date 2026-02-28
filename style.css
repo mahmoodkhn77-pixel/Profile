@@ -346,4 +346,23 @@ section {
         height: 2rem;
     }
 
+    /* reduce section padding for phones */
+    section {
+        padding: 4rem 1rem;
+    }
+
+    .about p {
+        font-size: 0.9rem;
+    }
+
+    /* mermaid adjustments */
+    .mermaid {
+        padding: 1rem;
+    }
+
+    .mermaid svg {
+        font-size: 0.75rem;
+        width: 100% !important;
+        height: auto !important;
+    }
 }
