@@ -262,6 +262,24 @@ section {
 /* hide any leftover tree styles */
 /* old tree CSS removed */
 
+/* mobile-specific skill list */
+.skills-list {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 2rem auto;
+    max-width: 300px;
+}
+
+.skills-list li {
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
+
 /* Contact form */
 .contact-form {
     max-width: 500px;
@@ -364,5 +382,14 @@ section {
         font-size: 0.75rem;
         width: 100% !important;
         height: auto !important;
+    }
+
+    /* show simple list instead of chart */
+    .mermaid {
+        display: none;
+    }
+
+    .skills-list {
+        display: block;
     }
 }
