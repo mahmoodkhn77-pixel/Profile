@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahmood Khan - Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="preload">
+    <!-- Loader -->
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">Mahmood Khan</div>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-label">&#9776;</label>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">Projects</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="fade-in-left">Mahmood Khan</h1>
+            <h2 class="typing-text fade-in-left delay-1" data-text="Frontend Developer"></h2>
+            <p class="fade-in delay-2">Hello! I am a passionate frontend developer specializing in building responsive
+                and modern web interfaces. Welcome to my portfolio!</p>
+            <a href="#contact" class="btn btn-glow fade-in delay-3">View Projects</a>
+        </div>
+        <!-- use profile.jpg for the real photo -->
+        <img src="bg.png" alt="Profile" class="hero-image fade-in-right floating">
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2 class="text-center fade-in">About Me</h2>
+        <p class="fade-in delay-1">
+        <p>
+            I am Mahmood Khan, a passionate Frontend Developer focused on building clean, responsive, and user-friendly
+            web interfaces. I enjoy turning ideas into real, interactive experiences using modern web technologies.
+        </p>
+        <p>
+            With a strong foundation in HTML, CSS, and JavaScript, I have experience working with frameworks like React
+            and Vue.js. I am dedicated to writing clean, maintainable code and collaborating effectively with teams to
+            deliver high-quality projects.
+
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2 class="text-center fade-in">Skills</h2>
+        <div class="skill-bar fade-in delay-1"><span class="skill-name">HTML</span>
+            <div class="bar">
+                <div class="fill" data-percent="90"></div>
+            </div>
+        </div>
+        <div class="skill-bar fade-in delay-1"><span class="skill-name">CSS</span>
+            <div class="bar">
+                <div class="fill" data-percent="85"></div>
+            </div>
+        </div>
+        <div class="skill-bar fade-in delay-1"><span class="skill-name">JavaScript</span>
+            <div class="bar">
+                <div class="fill" data-percent="80"></div>
+            </div>
+        </div>
+        <div class="skill-bar fade-in delay-1"><span class="skill-name">Responsive Design</span>
+            <div class="bar">
+                <div class="fill" data-percent="75"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2 class="text-center fade-in">Contact</h2>
+        <form class="contact-form fade-in delay-1">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit" class="btn btn-glow">Send Message</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
