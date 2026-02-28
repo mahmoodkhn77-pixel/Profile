@@ -330,10 +330,10 @@ section {
     }
 
     .hero-image {
-        margin-top: 2rem;
+        margin-top: 1rem;
         width: 250px;
         /* keep aspect ratio and give more height space */
-        height: auto;
+        height: 300px;
         max-height: 300px;
         max-width: 100%;
     }
@@ -348,6 +348,12 @@ section {
         font-size: 1.5rem;
         height: 2rem;
     }
-}
+    .hero-image {
+        margin-top: 1rem;
+        width: 250px;
+        /* keep aspect ratio and give more height space */
+        height: 300px;
+    }
+
 
 
