@@ -35,23 +35,37 @@ window.addEventListener('DOMContentLoaded', () => {
         else nav.classList.remove('scrolled');
     });
 
-    // intersection observer for sections, animated elements, and skill bars
+    // intersection observer for sections and animated elements
     const observerOptions = { threshold: 0.15 };
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('visible');
-                if (entry.target.id === 'skills') {
-                    entry.target.querySelectorAll('.fill').forEach(el => {
-                        el.style.width = el.dataset.percent + '%';
-                    });
-                }
             }
         });
     }, observerOptions);
 
     // observe sections and elements with animation classes
     document.querySelectorAll('section, .fade-in, .fade-in-left, .fade-in-right, .slide-up').forEach(el => observer.observe(el));
+
+    // handle contact form submissions by opening mail client
+    const contactForm = document.getElementById('contact-form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+            const name = document.getElementById('contact-name').value.trim();
+            const email = document.getElementById('contact-email').value.trim();
+            const message = document.getElementById('contact-message').value.trim();
+            const to = 'mahmoodkhn77@gmail.com';
+            const subject = encodeURIComponent('Portfolio contact from ' + name);
+            let body = 'Name: ' + name + '\n';
+            body += 'Email: ' + email + '\n\n';
+            body += 'Message:\n' + message;
+            body = encodeURIComponent(body);
+            // create mailto link and open
+            window.location.href = `mailto:${to}?subject=${subject}&body=${body}`;
+        });
+    }
 });
 
 // hero animation helper
