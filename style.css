@@ -131,8 +131,8 @@ nav.scrolled {
 
 @media (max-width: 768px) {
     .nav-links {
-        position: absolute;
-        top: 60px;
+        position: relative;
+        top: 80px;
         right: 0;
         background: #112240;
         flex-direction: column;
@@ -187,7 +187,12 @@ nav.scrolled {
     object-fit: cover;
     transition: transform 0.3s ease;
 }
-
+@media (max-width: 768px) {
+    .hero-image {
+        width: 100px;
+        height: 120px;
+        border-radius: 50%;
+    }}
 .hero-image:hover {
     transform: scale(1.05);
 }
@@ -349,3 +354,4 @@ section {
         height: 2rem;
     }
 }
+
