@@ -131,7 +131,7 @@ nav.scrolled {
 
 @media (max-width: 768px) {
     .nav-links {
-        position: fixed;
+        position: absolute;
         top: 60px;
         right: 0;
         background: #112240;
@@ -342,4 +342,5 @@ section {
         font-size: 1.5rem;
         height: 2rem;
     }
+
 }
