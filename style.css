@@ -391,5 +391,7 @@ section {
 
     .skills-list {
         display: block;
+        opacity: 1 !important;
+        transform: none !important;
     }
 }
