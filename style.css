@@ -1,4 +1,4 @@
-/* Reset & Global *//* Reset & Global */
+/* Reset & Global */
 *,
 *::before,
 *::after {
@@ -131,8 +131,8 @@ nav.scrolled {
 
 @media (max-width: 768px) {
     .nav-links {
-        position: fixed;
-        top: 30px;
+        position: absolute;
+        top: 60px;
         right: 0;
         background: #112240;
         flex-direction: column;
@@ -159,7 +159,7 @@ nav.scrolled {
     justify-content: space-between;
     min-height: 100vh;
     /* add top padding equivalent to nav height so content isn't hidden behind it */
-    padding: 60px 2rem 0;
+    padding: 60px 2rem 0.2rem 2rem;
 }
 
 .hero-content {
@@ -168,7 +168,7 @@ nav.scrolled {
 
 .hero h1 {
     font-size: 3rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 .hero h2 {
@@ -211,7 +211,7 @@ nav.scrolled {
 
 /* Sections */
 section {
-    padding: 6rem 2rem;
+    padding: 6rem 8rem;
 }
 
 .text-center {
@@ -241,29 +241,26 @@ section {
     box-shadow: 0 0 8px rgba(135, 206, 250, 0.7);
 }
 
-/* Skill bars */
-.skill-bar {
-    margin-bottom: 1rem;
+/* Mermaid flowchart styling */
+.mermaid {
+    max-width: 100%;
+    margin: 2rem auto;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: auto;
 }
 
-.skill-name {
+/* adjust nodes font size for readability */
+.mermaid svg {
+    font-size: 1.9rem;
     display: block;
-    font-weight: 500;
-    margin-bottom: 0.3rem;
+    margin: 0 auto;
 }
 
-.bar {
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 4px;
-    overflow: hidden;
-}
-
-.fill {
-    width: 0;
-    height: 12px;
-    background: #87cefa;
-    transition: width 2s ease;
-}
+/* hide any leftover tree styles */
+/* old tree CSS removed */
 
 /* Contact form */
 .contact-form {
@@ -330,11 +327,11 @@ section {
     }
 
     .hero-image {
-        margin-top: 1rem;
+        margin-top: 2rem;
         width: 250px;
         /* keep aspect ratio and give more height space */
         height: 300px;
-        max-height: 300px;
+        max-height: 400px;
         max-width: 100%;
     }
 }
@@ -348,12 +345,5 @@ section {
         font-size: 1.5rem;
         height: 2rem;
     }
-    .hero-image {
-        margin-top: 1rem;
-        width: 250px;
-        /* keep aspect ratio and give more height space */
-        height: 300px;
-    }
 
-
-
+}
